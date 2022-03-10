@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.functionality{
+    display: flex;
+    gap: 40px;
+}
+
+.left-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+span{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    border: solid black;
+    width: 70px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none; /*affects chrome & firefox*/
+    appearance: none; /*doesnt seem to do anything*/
+    background: transparent; /*doesnt seem to do anything*/
+    cursor: pointer; /* on hover, it becomes a hand, not a cursor*/
+    width: 300px;
+}
+
+/* Targets track in Chrome, Safari */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(47, 77, 147, 0.9);
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem black; /* hori offset, verti offset, blurring, color */
+}
+
+/* Targets track in Firefox */
+input[type="range"]::-moz-range-track {
+    background: rgba(47, 77, 147, 0.9);
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem black; /* hori offset, verti offset, blurring, color */
+}
+
+/* Targets thumb in Chrome, Safari */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -14.4px; /* Centers thumb on the track. This is (track height in pixels / 2) - (thumb height in pixels /2). 1 rem = 16px*/
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;    
+    border: solid black;
+    border-radius: 0.5rem;
+    
+ }
+
+/* Targets thumb in Firefox */
+input[type="range"]::-moz-range-thumb {
+    border: solid black; /* If you want a blank slate, should remove default grey border that Firefox applies. Else, set to desired value for webkit and FF.*/
+    border-radius: 0.5rem; /*If you want a blank slate, should remove default border-radius that Firefox applies. Else, set to desired value for webkit and FF.*/
+    background-color: #5cd5eb;
+    height: 2rem;
+    width: 1rem;
+}
+
+/* Removes default focus styles */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* Sets focus styles in Chrome, Safari */
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+  
+/* Sets focus styles in Firefox */
+  input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0.1rem 0.1rem 0.3rem black;     
+}
+
+
+.right-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sketch-container{
+    display: inline-block;
+    outline: 1px solid black;
+    height: 500px;
+    width: 500px;
+    gap: 0px;
+    magin: 0px;
+    padding: 0px;
+}
+
+.mini-div {
+    display: inline-block;
+    outline: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}

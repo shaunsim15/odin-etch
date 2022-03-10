@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odin Landing Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class = "container">
+            <h1>Etch-A-Sketch</h1>
+            <div class="functionality">
+                <div class = "left-buttons">
+                    <button class = "left-btn solid">Solid</button>
+                    <button class = "left-btn gradual">Gradual</button>
+                    <button class = "left-btn rainbow">Rainbow</button>
+                </div>
+                <div class = "mid-buttons">
+                    <span class="bullet"></span>
+                    <input type="range" min="1" max ="90" value="45" class="slider" id="myRange"></input>
+                </div>
+                <div class = "right-buttons">
+                    <button class = "right-btn erase">Erase</button>
+                    <button class = "right-btn reset">Reset</button>
+                </div>
+            </div>
+            <div class = "sketch-container"></div>
+
+
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
