@@ -2,6 +2,7 @@ body{
     display: flex;
     justify-content: center;
     background: linear-gradient(135deg,#04aab0 0%,#04e2be 100%) no-repeat;
+    color:
 }
 
 .container{
@@ -113,21 +114,16 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .sketch-container{
-    display: flex;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
+    display: grid;
     outline: 1px solid black;
     height: 500px;
     width: 500px;
     gap: 0px;
-    magin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
 .sketch-container div {
-    display: flex;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
     outline: 1px solid grey;
     margin: 0px;
     padding: 0px;
