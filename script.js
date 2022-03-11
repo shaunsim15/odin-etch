@@ -27,22 +27,23 @@ function generateDivs(){
         sketchContainer.removeChild(sketchContainer.lastChild);
       }
 
-    // Width of each mini div in pixels. Obtained with (sketch container width) / number of divs
-    let miniDivWidth = Number(getComputedStyle(sketchContainer).getPropertyValue('width').slice(0,-2)) / slider.value;
+    let totalSquares = slider.value*slider.value;
+    let miniDivLength = `${100/slider.value}%`
 
     /// Create mini-divs
-    for (let i = 0; i < slider.value; i++){
-        for (let j = 0; j < slider.value; j++){
-            const div = document.createElement('div');
-            div.setAttribute('class','mini-div');
-            div.style.width = `${miniDivWidth}px`;
-            div.style.height = `${miniDivWidth}px`;
-            sketchContainer.appendChild(div);
-        }
+    for (let i = 0; i < totalSquares; i++){
+        
+        const div = document.createElement('div');
+        div.style.width = miniDivLength;
+        div.style.height = miniDivLength;
+        sketchContainer.appendChild(div);
     }
 }
-generateDivs(slider.value);
+generateDivs();
 
 slider.addEventListener('input',generateDivs);
 
+// Width of each mini div in pixels. Obtained with (sketch container width) / number of divs
+// let miniDivWidth = Number(getComputedStyle(sketchContainer).getPropertyValue('width').slice(0,-2)) / slider.value;
+// div.setAttribute('class','mini-div');
 

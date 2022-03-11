@@ -1,6 +1,7 @@
 body{
     display: flex;
     justify-content: center;
+    background: linear-gradient(135deg,#04aab0 0%,#04e2be 100%) no-repeat;
 }
 
 .container{
@@ -112,7 +113,9 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .sketch-container{
-    display: inline-block;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
     outline: 1px solid black;
     height: 500px;
     width: 500px;
@@ -121,9 +124,12 @@ input[type="range"]:focus::-webkit-slider-thumb {
     padding: 0px;
 }
 
-.mini-div {
-    display: inline-block;
-    outline: 1px solid black;
+.sketch-container div {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    outline: 1px solid grey;
     margin: 0px;
     padding: 0px;
+    background-color: white;
 }
