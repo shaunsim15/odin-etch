@@ -1,22 +1,27 @@
 body{
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg,#04aab0 0%,#04e2be 100%) no-repeat;
-    color:
+    background: linear-gradient(90deg,#04aab0 0%,#57df75 100%);
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(2, 20, 121)
 }
 
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
     text-align: center;
+    font-weight: 600;
 }
 
 .functionality{
     display: flex;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .left-buttons{
@@ -27,6 +32,15 @@ h1{
     align-items: center;
 }
 
+.left-btn{
+    background-color: rgba(255,255,255,0);
+    color: rgb(2, 20, 121);
+    border: solid rgb(2, 20, 121);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(2, 20, 121); /* hori offset, verti offset, blurring, color */
+    font-family: 'Fredoka', sans-serif;
+    width: 6rem;
+}
+
 .mid-buttons{
     display: flex;
     flex-direction: column;
@@ -35,11 +49,31 @@ h1{
 
 }
 
+.right-btn{
+    background-color: rgba(255,255,255,0);
+    color: rgb(2, 20, 121);
+    border: solid rgb(2, 20, 121);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(2, 20, 121); /* hori offset, verti offset, blurring, color */
+    font-family: 'Fredoka', sans-serif;
+    width: 6rem;
+}
+
+.active{
+    background-color: rgb(2,20,121);
+    color: rgb(225, 255, 252);
+}
+
+.reset:active{
+    background-color: rgb(2,20,121);
+    color: rgb(225, 255, 252);
+}
+
 span{
     position: relative;
     bottom: 15px;
     text-align: center;
-    border: solid black;
+    border: solid rgb(2, 20, 121);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(2, 20, 121); /* hori offset, verti offset, blurring, color */
     width: 70px;
 }
 
@@ -116,6 +150,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .sketch-container{
     display: grid;
     outline: 1px solid black;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(2, 20, 121); /* hori offset, verti offset, blurring, color */
     height: 500px;
     width: 500px;
     gap: 0px;
